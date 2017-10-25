@@ -91,7 +91,7 @@ function handleFilterClick(event) {
         gapi.client.gmail.users.settings.filters.create(filter).then(function (response) {
             console.log(response);
             alert(`The email address ${email} has been added to a filter on your account.\nRedirecting you to Gmail now.`)
-            window.location.href = 'https:mail.google.com'
+            window.location.href = 'https://mail.google.com'
         }).catch(console.log)
     } else {
         alert("Either you entered a non valid email address, or I need to get better at programming.")
