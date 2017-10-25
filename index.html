@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gmail Filter Demo</title>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Gmail Filter Demo</h2>
+    </header>
+    <div class="content">
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <section class="box">
+            <div id="loading" style="display: block;">
+                <h1>Loading...</h1>
+            </div>
+            <div id="form-content" style="display: none;">
+                <p>Enter in an email address that you would like to mark as important in your Primary Inbox for the Gmail account
+                    you logged in with.</p>
+                <br>
+                <div class="input-group">
+                    <label for="">Email</label>
+                    <input type="text" id="email-input">
+                </div>
+                <br>
+                <button id="set-filter-button">Filter as Important</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script async defer src="./app.js" type="text/javascript"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+</body>
+
+</html>
